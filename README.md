@@ -36,7 +36,7 @@ limited by the results of the API (no paging limits in the application itself).
 - Atomic Design
 - Repository Pattern
 
-# How the assignment looks - see below video
+# How the assignment looks - see below images
 
 <table><tr>
 ## Assignment Journey :
