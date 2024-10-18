@@ -1,16 +1,53 @@
 # degreed
+A Flutter Assignment
 
-A new Flutter project.
+## Assignment 
 
-## Getting Started
+Create an application that uses the "I can haz dad joke" API (https://icanhazdadjoke.com/api) to display jokes. 
+The graphic design of the application should prioritize simplicity, legibility, consistency, and adherence to overall 
+design best practices according to your chosen platform. The application can be developed as a native iOS app, 
+a native Android app, or a Flutter app. Use industry-standard best practices for retrieving, storing, and displaying joke results
+from the API.
 
-This project is a starting point for a Flutter application.
+Upon startup, the application should fetch and display a random joke. 
+The application should accept a search term, then display the jokes as a theoretically infinite scrolling list 
+limited by the results of the API (no paging limits in the application itself).
 
-A few resources to get you started if this is your first Flutter project:
+## Completed Project Decription
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+# How To Run
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- should have flutter installed on the system you are running the code
+- go to main root folder and run 
+- flutter pub get 
+- flutter run -d <deviceId>
+
+# Dependencies used for the project
+
+- flutter_bloc
+- get_it
+- http
+- dartz
+- connectivity_plus
+
+# Architecture and Designs Followed
+
+- Clean Architecture (DATA - DOMAIN - PRESENTATION)
+- Atomic Design
+- Repository Pattern
+
+# How the assignment looks - see below video
+
+<table><tr>
+
+## 01_product_journey :
+
+  <td>main_screen.png</td>
+
+  <td>search_results.png</td>
+</tr>
+  <td><img src="./images/2.png" alt="image-description"  width="360" height="660"/></td>
+  <td><img src="./images/1.png" alt="image-description"  width="360" height="660"/></td>
+</tr>
+</table>
+<table><tr>
