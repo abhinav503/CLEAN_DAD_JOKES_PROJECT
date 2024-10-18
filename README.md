@@ -39,11 +39,8 @@ limited by the results of the API (no paging limits in the application itself).
 # How the assignment looks - see below video
 
 <table><tr>
-
-## 01_product_journey :
-
+## Assignment Journey :
   <td>main_screen.png</td>
-
   <td>search_results.png</td>
 </tr>
   <td><img src="./images/2.png" alt="image-description"  width="360" height="660"/></td>
