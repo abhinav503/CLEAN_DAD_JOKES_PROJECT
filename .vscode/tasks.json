@@ -1,0 +1,105 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "core_folder_windows",
+      "command": [
+        "echo 'void main() async {\n  // injectionContainer();\n  runApp(\n    MaterialApp(\n      // home: const HomePage(),\n      theme: ThemeData(\n        textTheme: textTheme(),\n      ),\n    ),\n  );\n}\n\nTextTheme? textTheme() {}' > './lib/main.dart';",
+        "mkdir './lib/core';",
+        //colors
+        "mkdir './lib/core/colors';",
+        "cd . > './lib/core/colors/colors.dart';",
+        //injection container
+        "mkdir './lib/core/di';",
+        "cd . >  './lib/core/di/injection_container.dart';",
+        //router
+        "mkdir './lib/router';",
+        "cd . >  './lib/router/routers.dart';",
+        //features folder
+        "mkdir './lib/features';",
+        //constants
+        "mkdir './lib/core/constants';",
+        "cd . > './lib/core/constants/string_constants.dart';",
+        "cd . > './lib/core/constants/api_constants.dart';",
+        //base methods and widgets
+        "mkdir './lib/core/base';",
+        "cd . > './lib/core/base/base_exception.dart';",
+        "echo 'class BaseException {\n  Future<Object?> baseMethodExceptions<T>(\n    Future<T> Function() baseMethod,\n  ) async {\n    try {\n      return await baseMethod();\n    } catch (e) {\n      return T;\n    }\n  }\n}'> './lib/core/base/base_exception.dart';",
+        //mapper
+        "mkdir './lib/core/model_to_entity_mapper';",
+        "cd . > './lib/core/model_to_entity_mapper/mapper.dart';",
+        "echo 'abstract class Mapper<FROM, TO> {\n  TO call(FROM object);\n}'> './lib/core/model_to_entity_mapper/mapper.dart';",
+        //usecase
+        "mkdir './lib/core/usecase';",
+        "cd . > './lib/core/usecase/usecase.dart';",
+        "echo 'abstract class Usecase<Type, Param> {\n  Future<Type> call(Param params);\n}'> './lib/core/usecase/usecase.dart';",
+        //common models
+        "mkdir './lib/core/models';",
+        "cd . > './lib/core/models/failure_model.dart';",
+        "echo 'class FailureModel {\n  final String message;\n  FailureModel({required this.message});\n}' > './lib/core/models/failure_model.dart';",
+        "cd . > './lib/core/models/no_params_model.dart';",
+        "echo 'class NoParamsModel{}' > './lib/core/models/no_params_model.dart';",
+        //Atomic Design
+        "mkdir './lib/core/ui';",
+        "mkdir './lib/core/ui/atoms';",
+        "mkdir './lib/core/ui/molecules';",
+        "mkdir './lib/core/ui/organisms';",
+        "mkdir './lib/core/ui/templates';",
+      ],
+      "type": "shell",
+      "problemMatcher": [],
+      "presentation": {
+        "echo": false,
+        "reveal": "silent",
+        "focus": false,
+        "panel": "shared",
+        "showReuseMessage": false,
+        "clear": true
+      }
+    },
+    {
+      "label": "feature_windows",
+      "command": [
+        "mkdir './lib/features/${input:feature_name}'; ",
+        //presentation
+        "mkdir './lib/features/${input:feature_name}/presentation'; ",
+        "mkdir './lib/features/${input:feature_name}/presentation/views'; ",
+        "cd . > './lib/features/${input:feature_name}/presentation/views/${input:feature_name}_page.dart';",
+        "cd . > './lib/features/${input:feature_name}/presentation/views/${input:feature_name}_screen.dart';",
+        "mkdir './lib/features/${input:feature_name}/presentation/widgets/'; ",
+        //data
+        "mkdir './lib/features/${input:feature_name}/data';",
+        "mkdir './lib/features/${input:feature_name}/data/data_source';",
+        "cd . > './lib/features/${input:feature_name}/data/data_source/${input:feature_name}_data_source.dart';",
+        "cd . > './lib/features/${input:feature_name}/data/data_source/${input:feature_name}_data_source_impl.dart';",
+        "mkdir './lib/features/${input:feature_name}/data/respository_impl';",
+        "cd . > './lib/features/${input:feature_name}/data/respository_impl/${input:feature_name}_repository_impl.dart';",
+        "mkdir './lib/features/${input:feature_name}/data/models';",
+        //domain
+        "mkdir './lib/features/${input:feature_name}/domain';",
+        "mkdir './lib/features/${input:feature_name}/domain/repository';",
+        "cd . > './lib/features/${input:feature_name}/domain/repository/${input:feature_name}_repository.dart';",
+        "mkdir './lib/features/${input:feature_name}/domain/usecase';",
+        "mkdir './lib/features/${input:feature_name}/domain/entities';",
+      ],
+      "type": "shell",
+      "problemMatcher": [],
+      "presentation": {
+        "echo": false,
+        "reveal": "silent",
+        "focus": false,
+        "panel": "shared",
+        "showReuseMessage": false,
+        "clear": true
+      }
+    },
+  ],
+  "inputs": [
+    {
+      "type": "promptString",
+      "id": "feature_name",
+      "description": "Complete my folder name",
+      "default": "feature_name to create"
+    }
+  ]
+}

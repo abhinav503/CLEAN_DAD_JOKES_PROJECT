@@ -1,5 +1,5 @@
 import 'package:degreed/core/model_to_entity_mapper/mapper.dart';
-import 'package:degreed/feature/home/data/models/dad_joke_model.dart';
+import 'package:degreed/features/home/data/models/dad_joke_model.dart';
 
 class DadJokeEntity extends Mapper<DadJokeModel, DadJokeEntity> {
   String? id;

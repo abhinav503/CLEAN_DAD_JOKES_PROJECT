@@ -1,11 +1,11 @@
 import 'dart:async';
 import 'package:degreed/core/constants/string_constants.dart';
 import 'package:degreed/core/ui/atoms/custom_text_field.dart';
-import 'package:degreed/feature/home/presentation/widget/joke_item_widget.dart';
-import 'package:degreed/feature/home/presentation/widget/loading_widget.dart';
+import 'package:degreed/features/home/presentation/widget/joke_item_widget.dart';
+import 'package:degreed/features/home/presentation/widget/loading_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:degreed/feature/home/presentation/bloc/home_bloc.dart';
+import 'package:degreed/features/home/presentation/bloc/home_bloc.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});

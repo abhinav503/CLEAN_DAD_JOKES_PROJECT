@@ -1,9 +1,9 @@
 import 'package:bloc_test/bloc_test.dart';
 import 'package:degreed/core/colors.dart';
 import 'package:degreed/core/di/injection_container.dart';
-import 'package:degreed/feature/home/domain/entities/dad_joke_entity.dart';
-import 'package:degreed/feature/home/presentation/bloc/home_bloc.dart';
-import 'package:degreed/feature/home/presentation/view/home_page.dart';
+import 'package:degreed/features/home/domain/entities/dad_joke_entity.dart';
+import 'package:degreed/features/home/presentation/bloc/home_bloc.dart';
+import 'package:degreed/features/home/presentation/view/home_page.dart';
 import 'package:degreed/main.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';

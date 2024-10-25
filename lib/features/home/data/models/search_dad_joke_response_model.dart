@@ -1,4 +1,4 @@
-import 'package:degreed/feature/home/data/models/dad_joke_model.dart';
+import 'package:degreed/features/home/data/models/dad_joke_model.dart';
 
 class SearchDadJokeReponseModel {
   int? currentPage;

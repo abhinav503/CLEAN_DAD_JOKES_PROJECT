@@ -3,13 +3,13 @@ import 'dart:async';
 import 'package:degreed/core/models/api_failure_model.dart';
 import 'package:degreed/core/models/search_dad_joke_request_model.dart';
 import 'package:degreed/core/ui/atoms/pagination_controller.dart';
-import 'package:degreed/feature/home/domain/entities/search_dad_joke_results_entity.dart';
-import 'package:degreed/feature/home/domain/usecase/get_search_dad_jokes_usecase.dart';
+import 'package:degreed/features/home/domain/entities/search_dad_joke_results_entity.dart';
+import 'package:degreed/features/home/domain/usecase/get_search_dad_jokes_usecase.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:degreed/core/models/no_param_model.dart';
-import 'package:degreed/feature/home/domain/entities/dad_joke_entity.dart';
-import 'package:degreed/feature/home/domain/usecase/get_dad_jokes_usecase.dart';
+import 'package:degreed/features/home/domain/entities/dad_joke_entity.dart';
+import 'package:degreed/features/home/domain/usecase/get_dad_jokes_usecase.dart';
 part 'home_event.dart';
 part 'home_state.dart';
 

@@ -1,5 +1,5 @@
-import 'package:degreed/feature/home/presentation/bloc/home_bloc.dart';
-import 'package:degreed/feature/home/presentation/view/home_screen.dart';
+import 'package:degreed/features/home/presentation/bloc/home_bloc.dart';
+import 'package:degreed/features/home/presentation/view/home_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:degreed/core/di/injection_container.dart';

@@ -1,6 +1,6 @@
 import 'package:degreed/core/colors.dart';
 import 'package:flutter/material.dart';
-import 'package:degreed/feature/home/presentation/view/home_page.dart';
+import 'package:degreed/features/home/presentation/view/home_page.dart';
 import 'package:degreed/core/di/injection_container.dart';
 
 void main() async {

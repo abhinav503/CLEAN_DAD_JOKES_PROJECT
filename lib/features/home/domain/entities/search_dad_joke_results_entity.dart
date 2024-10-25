@@ -1,6 +1,6 @@
 import 'package:degreed/core/model_to_entity_mapper/mapper.dart';
-import 'package:degreed/feature/home/data/models/search_dad_joke_response_model.dart';
-import 'package:degreed/feature/home/domain/entities/dad_joke_entity.dart';
+import 'package:degreed/features/home/data/models/search_dad_joke_response_model.dart';
+import 'package:degreed/features/home/domain/entities/dad_joke_entity.dart';
 
 class SearchDadJokeResultsEntity
     extends Mapper<SearchDadJokeReponseModel, SearchDadJokeResultsEntity> {
