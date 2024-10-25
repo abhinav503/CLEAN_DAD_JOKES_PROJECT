@@ -1,7 +1,7 @@
-# degreed
-A Flutter Assignment
+# CLEAN DAD JOKES
+A Flutter Project Showing the Architecture I Use
 
-## Assignment 
+## Project 
 
 Create an application that uses the "I can haz dad joke" API (https://icanhazdadjoke.com/api) to display jokes. 
 The graphic design of the application should prioritize simplicity, legibility, consistency, and adherence to overall 
@@ -39,7 +39,7 @@ limited by the results of the API (no paging limits in the application itself).
 # How the assignment looks - see below images
 
 <table><tr>
-## Assignment Journey :
+## Project Journey :
   <td>main_screen.png</td>
   <td>search_results.png</td>
 </tr>
